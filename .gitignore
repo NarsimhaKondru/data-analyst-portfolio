@@ -1,0 +1,27 @@
+# ---- Raw / large data -------------------------------------------------
+# Do NOT commit raw data. Link to the Kaggle source in each README.
+# Remove the *.csv line if you want to commit a small sample file.
+data/raw/
+*.csv
+*.zip
+*.json
+
+# ---- Excel temp files -------------------------------------------------
+~$*
+*.tmp
+
+# ---- Power BI ---------------------------------------------------------
+*.pbix
+*.pbix.backup
+*.pbit
+
+# ---- Python -----------------------------------------------------------
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ---- OS / editor ------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

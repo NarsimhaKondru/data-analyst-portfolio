@@ -1,0 +1,76 @@
+# 01 · Cafe Sales Performance Report (Excel)
+
+**Status:** ⬜ Not started  |  ✅ Finished on: __________
+
+**Question:** Which products, months and days drive revenue — and where should the owner focus next quarter?
+
+**Tools:** Microsoft Excel (Google Sheets also works)
+**Data:** Kaggle → search *"Dirty Cafe Sales"*
+https://www.kaggle.com/datasets?search=dirty%20cafe%20sales
+**Size:** ~10,000 rows, full year
+
+---
+
+## Session 1 (60 min) — clean the data
+
+- [ ] Download CSV → save as `data/raw/cafe_sales_raw.csv` (never edit the raw file)
+- [ ] `Save As` → `01-excel-sales/cafe_sales_clean.xlsx`
+- [ ] Data → **Remove Duplicates**
+- [ ] Fix the date column (Text to Columns or format as Date)
+- [ ] Handle blanks: fill with `0`, `Unknown`, or delete — **write down which**
+- [ ] Standardise category names (`TRIM`, `PROPER`, find & replace)
+- [ ] Add `Total = Quantity * Price` as a new column
+- [ ] Pivot 1: revenue by month
+- [ ] Pivot 2: revenue by category
+- [ ] Pivot 3: top 10 items by quantity
+
+**Cleaning log (fill this in — interviewers ask):**
+
+| Problem found | Rows affected | What I did |
+|---|---|---|
+| Duplicates | | |
+| Missing dates | | |
+| Blank prices | | |
+| Inconsistent category names | | |
+
+---
+
+## Session 2 (60 min) — build the dashboard
+
+- [ ] New sheet called `Dashboard`
+- [ ] KPI tiles: Total Revenue · Total Orders · Average Order Value · Top Category
+- [ ] Line chart: revenue by month
+- [ ] Bar chart: revenue by category
+- [ ] Bar chart: top 10 products
+- [ ] 2 slicers (Month, Category) connected to all pivots
+- [ ] Consistent colour theme, no gridlines, labels readable
+- [ ] Screenshot → `assets/01-excel-dashboard.png`
+
+---
+
+## Key findings
+
+1. **[number]** — what it means
+2.
+3.
+
+## Recommendation
+
+> One sentence a cafe owner could act on this week.
+
+---
+
+## Files
+
+- `cafe_sales_clean.xlsx` — cleaned data + dashboard
+- `assets/01-excel-dashboard.png`
+
+## Definition of done
+
+- [ ] Dashboard opens and all charts respond to slicers
+- [ ] README contains 3 real numbers
+- [ ] Screenshot committed to GitHub
+
+## 60-second interview answer (fill in and practise out loud)
+
+"My first project was a cafe sales dataset of about **10,000 rows**. I cleaned it in Excel — duplicates, bad dates, missing prices — then built pivots and a one-page dashboard with slicers. The main finding was **______**, so I recommended **______**. The hardest part was **______**, which I solved by **______**."
